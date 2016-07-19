@@ -58,7 +58,6 @@ module.exports = {
   plugins: [
     'hyperterm-blink',
     'hyperterm-firewatch',
-    'hyperline',
     'hypercwd'
   ],
 
