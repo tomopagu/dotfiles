@@ -4,7 +4,7 @@ module.exports = {
     fontSize: 12,
 
     // font family with optional fallbacks
-    fontFamily: '"Fira Code", Menlo, "DejaVu Sans Mono", "Lucida Console", monospace',
+    fontFamily: 'Hack, "Fira Code", Menlo, "DejaVu Sans Mono", "Lucida Console", monospace',
 
     // terminal cursor background color (hex)
     cursorColor: '#F81CE5',
@@ -19,7 +19,7 @@ module.exports = {
     borderColor: '#333',
 
     // custom css to embed in the main window
-    css: '',
+    css: '.hyperterm_main { border-width: 0; }',
 
     // custom padding (css format, i.e.: `top right bottom left`)
     termCSS: '',
@@ -56,9 +56,12 @@ module.exports = {
   //   `@company/project`
   //   `project#1.0.1`
   plugins: [
+    'hyperlinks',
     'hyperterm-blink',
     'hyperterm-firewatch',
-    'hypercwd'
+    'hypercwd',
+    "hyperterm-tab-icons",
+    "hyperterm-paste"
   ],
 
   // in development, you can create a directory under
