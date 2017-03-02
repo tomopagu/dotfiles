@@ -33,14 +33,6 @@ set -U GOPATH $HOME/Go/
 # Set nvm_dir
 set -gx NVM_DIR /Users/tomo/.nvm
 
-# Servers
-#alias vps="ssh root@dokku.pagu.co"
-#alias irc="ssh root@dokku.pagu.co -t 'screen -r irc'"
-
-# Work Servers
-alias web1="mosh root@web1.ahead4.com"
-alias gitlab="ssh root@dev.ahead4.com"
-
 # Serving current folder on 0.0.0.0 from 8080 or a specifc port
 function serve
 	if count $argv > /dev/null
