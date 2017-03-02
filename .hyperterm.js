@@ -1,10 +1,10 @@
 module.exports = {
   config: {
     // default font size in pixels for all tabs
-    fontSize: 12,
+    fontSize: 14,
 
     // font family with optional fallbacks
-    fontFamily: 'Hack, "Fira Code", Menlo, "DejaVu Sans Mono", "Lucida Console", monospace',
+    fontFamily: '"Operator Mono", Hack, "Fira Code", Menlo, "DejaVu Sans Mono", "Lucida Console", monospace',
 
     // terminal cursor background color (hex)
     cursorColor: '#F81CE5',
@@ -56,13 +56,20 @@ module.exports = {
   //   `@company/project`
   //   `project#1.0.1`
   plugins: [
-    'hyperlinks',
-    'hyperterm-blink',
-    'hyperterm-firewatch',
+    'hyper-blink',
+    'hyper-chesterish',
     'hypercwd',
-    "hyperterm-tab-icons",
-    "hyperterm-paste"
+    'hyperterm-paste',
+    'hyper-tabs-enhanced',
+    'hyperline'
   ],
+
+  hyperTabs: {
+    activityColor: 'salmon',
+    border: true,
+    tabIconsColored: true,
+    trafficButtons: true,
+  },
 
   // in development, you can create a directory under
   // `~/.hyperterm_plugins/local/` and include it here
