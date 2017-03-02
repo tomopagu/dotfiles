@@ -13,7 +13,7 @@ function fish_greeting
 	command /usr/local/bin/zen-thought
 end
 
-export NOW_TOKEN=R272GDhMYReLRGcXBydp5CGb
+export NOW_TOKEN=
 
 # Set Path
 set PATH /usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/local/go/bin:$HOME/Go/bin
