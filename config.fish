@@ -7,8 +7,9 @@ set -gx OMF_PATH "/Users/tomo/.local/share/omf"
 # Load oh-my-fish configuration.
 source $OMF_PATH/init.fish
 
-# Zen Thought when starting Terminal
+# Add SSH Key & Zen Thought when starting Terminal
 function fish_greeting
+	command ssh-add -K ~/.ssh/id_rsa
 	command /usr/local/bin/zen-thought
 end
 
