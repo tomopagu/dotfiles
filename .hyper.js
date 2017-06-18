@@ -7,7 +7,8 @@ module.exports = {
     fontFamily: '"Operator Mono", Hack, "Fira Code", Menlo, "DejaVu Sans Mono", "Lucida Console", monospace',
 
     // terminal cursor background color (hex)
-    cursorColor: '#F81CE5',
+    // cursorColor: '#F81CE5',
+    cursorColor: 'salmon',
 
     // color of the text
     foregroundColor: '#fff',
@@ -46,7 +47,23 @@ module.exports = {
       '#cc00ff',
       '#00ffff',
       '#ffffff'
-    ]
+    ],
+
+    hyperTabs: {
+      activityColor: 'salmon',
+      border: false,
+      tabIcons: true,
+      tabIconsColored: true,
+      trafficButtons: true,
+    },
+
+    hyperline: {
+      background: 'black',
+    },
+
+    pokemon: 'pikachu', // Define your favorite pokemon theme!
+    pokemonSyntax: 'dark', // Define the 色 of the terminal tabs.
+    unibody: 'true', // Define the 色 of the Hyper window header
   },
 
   // a list of plugins to fetch and install from npm
@@ -57,19 +74,12 @@ module.exports = {
   //   `project#1.0.1`
   plugins: [
     'hyper-blink',
-    'hyper-chesterish',
+    'hyper-pokemon',
     'hypercwd',
     'hyperterm-paste',
     'hyper-tabs-enhanced',
     'hyperline'
   ],
-
-  hyperTabs: {
-    activityColor: 'salmon',
-    border: true,
-    tabIconsColored: true,
-    trafficButtons: true,
-  },
 
   // in development, you can create a directory under
   // `~/.hyperterm_plugins/local/` and include it here
