@@ -39,8 +39,8 @@ set -gx NVM_DIR /Users/tomo/.nvm
 alias web='cd ~/Web'
 
 # Streams
-alias riotgames='livestreamer http://twitch.tv/riotgames'
-alias jptv='livestreamer http://vaughnlive.tv/wgg001 best'
+alias riotgames='streamlink http://twitch.tv/riotgames'
+alias jptv='streamlink http://vaughnlive.tv/wgg001 best'
 
 # Show/Hide hidden files + misc clear cmd
 alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
