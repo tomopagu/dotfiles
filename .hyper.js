@@ -1,5 +1,7 @@
 module.exports = {
   config: {
+    // updateChannel: 'canary',
+
     // default font size in pixels for all tabs
     fontSize: 14,
 
@@ -32,15 +34,16 @@ module.exports = {
   //   `project#1.0.1`
   plugins: [
     'hyper-blink',
-    'hyper-snazzy',
+    'hyperterm-panda',
     'hypercwd',
     'hyperterm-paste',
     'hyper-tabs-enhanced',
-    "hyperline",
   ],
 
   // in development, you can create a directory under
   // `~/.hyperterm_plugins/local/` and include it here
   // to load it and avoid it being `npm install`ed
-  localPlugins: []
+  localPlugins: [
+    "hyperline",
+  ]
 };
